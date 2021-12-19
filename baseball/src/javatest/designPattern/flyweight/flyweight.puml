@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface 도형
+class 네모
+class Flyweight
+
+네모 <|-- 도형
+class Flyweight{
+    HashMap<String, 네모> 네모들
+    public static 네모 get네모(String color)
+}
+E
+class 네모{
+     public 네모();
+}
+
+
+
+@enduml
